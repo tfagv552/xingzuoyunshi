@@ -1,0 +1,225 @@
+/* 星座详情页样式 */
+.horoscope-page {
+    padding-top: var(--header-height);
+}
+
+.horoscope-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.horoscope-basic-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.zodiac-image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.zodiac-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+}
+
+.zodiac-symbol {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background: var(--theme-secondary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.zodiac-details {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.info-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.date-range, .element {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* 运势标签页样式 */
+.fortune-tabs {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.tab-btn.active {
+    color: var(--secondary-color);
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.fortune-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.fortune-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fortune-date {
+    color: var(--theme-text-light);
+    font-size: 14px;
+}
+
+.fortune-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.fortune-item {
+    padding: 20px;
+    background: var(--theme-background);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.fortune-item:hover {
+    transform: translateY(-5px);
+}
+
+.stars {
+    color: #f1c40f;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.fortune-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--theme-text);
+}
+
+/* 性格特点部分样式 */
+.personality-section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.personality-traits {
+    margin-bottom: 30px;
+}
+
+.traits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.traits-list li {
+    background: var(--theme-background);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.strengths-weaknesses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* 评论区样式 */
+.comments-section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 添加星座选择器样式 */
+.zodiac-selector {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.zodiac-select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--theme-secondary);
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--theme-text);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.zodiac-select:hover {
+    border-color: var(--theme-primary);
+}
+
+.zodiac-select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+} 

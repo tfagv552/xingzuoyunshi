@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星座运势网站 - 您的专业星座指南</title>
+    <meta name="description" content="提供专业的星座运势查询、星座配对分析、占星术知识分享的综合性平台">
+    <meta name="keywords" content="星座运势,星座配对,占星术,十二星座">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>星座运势</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="pages/horoscope/">星座运势</a></li>
+                <li><a href="pages/matching/">星座配对</a></li>
+                <li><a href="pages/articles/">星座知识</a></li>
+            </ul>
+            <div class="user-actions">
+                <!-- 未登录时显示 -->
+                <div class="guest-actions" id="guestActions">
+                    <a href="pages/user/login.html" class="login-btn">登录</a>
+                    <a href="pages/user/register.html" class="register-btn">注册</a>
+                </div>
+                <!-- 登录后显示 -->
+                <div class="user-profile" id="userProfile" style="display: none;">
+                    <span class="username"></span>
+                    <button class="logout-btn">退出登录</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 轮播图区域 -->
+        <section class="slider-section">
+            <div class="slider-container">
+                <!-- 轮播图内容将通过 JavaScript 动态加载 -->
+            </div>
+        </section>
+
+        <!-- 星座快速入口 -->
+        <section class="zodiac-grid">
+            <h2>十二星座</h2>
+            <div class="zodiac-container">
+                <a href="pages/horoscope/index.html?zodiac=aries" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/aries.png" alt="白羊座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>白羊座</h3>
+                    <p>3月21日 - 4月19日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=taurus" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/taurus.png" alt="金牛座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♉</span>
+                    </div>
+                    <h3>金牛座</h3>
+                    <p>4月20日 - 5月20日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=gemini" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/gemini.png" alt="双子座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>双子座</h3>
+                    <p>5月21日 - 6月21日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=cancer" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/cancer.png" alt="巨蟹座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>巨蟹座</h3>
+                    <p>6月22日 - 7月22日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=leo" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/leo.png" alt="狮子座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>狮子座</h3>
+                    <p>7月23日 - 8月22日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=virgo" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/virgo.png" alt="处女座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>处女座</h3>
+                    <p>8月23日 - 9月22日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=libra" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/libra.png" alt="天秤座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>天秤座</h3>
+                    <p>9月23日 - 10月23日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=scorpio" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/scorpio.png" alt="天蝎座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>天蝎座</h3>
+                    <p>10月24日 - 11月22日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=sagittarius" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/sagittarius.png" alt="射手座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>射手座</h3>
+                    <p>11月23日 - 12月21日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=capricorn" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/capricorn.png" alt="摩羯座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>摩羯座</h3>
+                    <p>12月22日 - 1月19日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=aquarius" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/aquarius.png" alt="水瓶座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>水瓶座</h3>
+                    <p>1月20日 - 2月18日</p>
+                </a>
+                <a href="pages/horoscope/index.html?zodiac=pisces" class="zodiac-item">
+                    <div class="zodiac-icon">
+                        <img src="images/zodiac/pisces.png" alt="双鱼座" onerror="this.src='images/zodiac/default.png'">
+                        <span class="zodiac-symbol">♈</span>
+                    </div>
+                    <h3>双鱼座</h3>
+                    <p>2月19日 - 3月20日</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- 热门文章 -->
+        <section class="hot-articles">
+            <h2>热门文章</h2>
+            <div class="articles-container">
+                <!-- 文章列表将通过 JavaScript 动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>专业的星座运势分析平台</p>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p>邮箱：contact@example.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 星座运势网站 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 页面加载完成后检查登录状态
+        window.addEventListener('load', function() {
+            const userStr = localStorage.getItem('user');
+            const token = localStorage.getItem('token');
+            
+            if (userStr && token) {
+                try {
+                    const user = JSON.parse(userStr);
+                    const guestActions = document.getElementById('guestActions');
+                    const userProfile = document.getElementById('userProfile');
+                    const usernameElement = userProfile.querySelector('.username');
+                    
+                    if (user && user.username) {
+                        guestActions.style.display = 'none';
+                        userProfile.style.display = 'flex';
+                        usernameElement.textContent = `欢迎，${user.username}`;
+                    }
+                } catch (error) {
+                    console.error('Error checking login status:', error);
+                }
+            }
+        });
+
+        // 检查是否需要刷新页面
+        if (localStorage.getItem('needRefresh') === 'true') {
+            localStorage.removeItem('needRefresh');
+            window.location.reload();
+        }
+    </script>
+</body>
+</html> 

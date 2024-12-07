@@ -1,0 +1,83 @@
+/* 响应式布局样式 */
+@media screen and (max-width: 1200px) {
+    .nav-container,
+    main,
+    .footer-content {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* 导航栏响应式 */
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .user-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* 轮播图响应式 */
+    .slider-container {
+        height: 300px;
+    }
+
+    .slide-content h3 {
+        font-size: 20px;
+    }
+
+    /* 星座网格响应式 */
+    .zodiac-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    /* 文章列表响应式 */
+    .articles-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* 导航栏进一步优化 */
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    /* 轮播图进一步优化 */
+    .slider-container {
+        height: 200px;
+    }
+
+    .slide-content h3 {
+        font-size: 18px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+
+    /* 用户操作按钮响应式 */
+    .user-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .login-btn,
+    .register-btn {
+        width: 100%;
+        text-align: center;
+    }
+} 
