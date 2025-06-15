@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>创建默认图片</title>
+</head>
+<body>
+    <canvas id="zodiacCanvas" width="400" height="400"></canvas>
+    <canvas id="sliderCanvas" width="800" height="400"></canvas>
+    <script>
+        // 创建星座默认图片
+        const zodiacCanvas = document.getElementById('zodiacCanvas');
+        const ctx = zodiacCanvas.getContext('2d');
+        
+        // 创建渐变背景
+        const zodiacGradient = ctx.createRadialGradient(200, 200, 0, 200, 200, 200);
+        zodiacGradient.addColorStop(0, '#3498db');
+        zodiacGradient.addColorStop(1, '#2c3e50');
+        
+        // 绘制圆形背景
+        ctx.fillStyle = zodiacGradient;
+        ctx.beginPath();
+        ctx.arc(200, 200, 190, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // 添加星星图案
+        ctx.fillStyle = '#fff';
+        ctx.font = '120px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('★', 200, 200);
+        
+        // 保存图片
+        const zodiacLink = document.createElement('a');
+        zodiacLink.download = 'zodiac-default.png';
+        zodiacLink.href = zodiacCanvas.toDataURL('image/png');
+        zodiacLink.click();
+
+        // 创建轮播图默认图片
+        const sliderCanvas = document.getElementById('sliderCanvas');
+        const sctx = sliderCanvas.getContext('2d');
+        
+        // 绘制渐变背景
+        const sliderGradient = sctx.createLinearGradient(0, 0, 800, 400);
+        sliderGradient.addColorStop(0, '#2c3e50');
+        sliderGradient.addColorStop(1, '#3498db');
+        sctx.fillStyle = sliderGradient;
+        sctx.fillRect(0, 0, 800, 400);
+        
+        // 添加文字
+        sctx.fillStyle = '#fff';
+        sctx.font = '48px Microsoft YaHei';
+        sctx.textAlign = 'center';
+        sctx.textBaseline = 'middle';
+        sctx.fillText('星座运势', 400, 200);
+        
+        // 保存轮播图默认图片
+        const sliderLink = document.createElement('a');
+        sliderLink.download = 'default.jpg';
+        sliderLink.href = sliderCanvas.toDataURL('image/jpeg');
+        sliderLink.click();
+    </script>
+</body>
+</html> 

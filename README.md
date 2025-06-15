@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HTML转图片工具
 
 一个简单易用的Python工具，可以将HTML文件转换为PNG或JPEG格式的图片。

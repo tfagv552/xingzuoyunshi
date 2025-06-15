@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星座配对 - 星座运势网站</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/matching.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-left">
+                <a href="../../index.html" class="back-home">
+                    <span class="back-arrow">←</span>
+                    返回主页
+                </a>
+            </div>
+            <!-- 其他导航内容 -->
+        </nav>
+    </header>
+
+    <main class="matching-page">
+        <div class="matching-container">
+            <h1>星座配对分析</h1>
+            <div class="matching-selector">
+                <div class="zodiac-select">
+                    <h3>选择您的星座</h3>
+                    <div class="zodiac-grid" id="yourZodiac">
+                        <!-- 星座选择网格将通过 JavaScript 动态生成 -->
+                    </div>
+                </div>
+                
+                <div class="matching-symbol">
+                    <span>♥</span>
+                </div>
+
+                <div class="zodiac-select">
+                    <h3>选择对方的星座</h3>
+                    <div class="zodiac-grid" id="partnerZodiac">
+                        <!-- 星座选择网格将通过 JavaScript 动态生成 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="matching-result" style="display: none;">
+                <h2>配对分析结果</h2>
+                <div class="compatibility-score">
+                    <div class="score-circle">
+                        <span class="score">0</span>
+                        <span class="total">/100</span>
+                    </div>
+                    <div class="score-text">匹配度</div>
+                </div>
+                
+                <div class="zodiac-pair">
+                    <div class="zodiac-info zodiac1">
+                        <img src="" alt="" class="zodiac-img">
+                        <h3 class="zodiac-name"></h3>
+                        <p class="zodiac-element"></p>
+                        <ul class="zodiac-traits"></ul>
+                    </div>
+                    <div class="match-symbol">♥</div>
+                    <div class="zodiac-info zodiac2">
+                        <img src="" alt="" class="zodiac-img">
+                        <h3 class="zodiac-name"></h3>
+                        <p class="zodiac-element"></p>
+                        <ul class="zodiac-traits"></ul>
+                    </div>
+                </div>
+                
+                <div class="compatibility-details">
+                    <div class="analysis-section">
+                        <h3>整体分析</h3>
+                        <p class="overall-analysis"></p>
+                    </div>
+                    <div class="analysis-section">
+                        <h3>相处建议</h3>
+                        <p class="relationship-advice"></p>
+                    </div>
+                    <div class="analysis-section advantages">
+                        <h3>优势</h3>
+                        <ul class="advantage-list"></ul>
+                    </div>
+                    <div class="analysis-section disadvantages">
+                        <h3>注意事项</h3>
+                        <ul class="disadvantage-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- 页脚内容 -->
+    </footer>
+
+    <script src="../../js/matching.js"></script>
+</body>
+</html> 

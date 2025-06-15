@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星座运势详情 - 星座运势网站</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/horoscope.css">
+</head>
+<body>
+    <!-- 导航栏沿用首页的 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-left">
+                <a href="../../index.html" class="back-home">
+                    <span class="back-arrow">←</span>
+                    返回主页
+                </a>
+            </div>
+            <!-- 其他导航内容 -->
+        </nav>
+    </header>
+
+    <main class="horoscope-page">
+        <div class="zodiac-selector">
+            <select id="zodiacSelect" class="zodiac-select">
+                <option value="aries">白羊座</option>
+                <option value="taurus">金牛座</option>
+                <option value="gemini">双子座</option>
+                <option value="cancer">巨蟹座</option>
+                <option value="leo">狮子座</option>
+                <option value="virgo">处女座</option>
+                <option value="libra">天秤座</option>
+                <option value="scorpio">天蝎座</option>
+                <option value="sagittarius">射手座</option>
+                <option value="capricorn">摩羯座</option>
+                <option value="aquarius">水瓶座</option>
+                <option value="pisces">双鱼座</option>
+            </select>
+        </div>
+
+        <div class="horoscope-header">
+            <div class="horoscope-basic-info">
+                <div class="zodiac-image-container">
+                    <img src="../../images/zodiac/aries.png" alt="白羊座" class="zodiac-image">
+                    <div class="zodiac-symbol">♈</div>
+                </div>
+                <div class="info-text">
+                    <h1 class="zodiac-name">白羊座</h1>
+                    <p class="date-range">3月21日 - 4月19日</p>
+                    <div class="zodiac-details">
+                        <p class="element">火象星座</p>
+                        <p class="ruling-planet">守护星：火星</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fortune-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="daily">今日运势</button>
+                <button class="tab-btn" data-tab="weekly">本周运势</button>
+                <button class="tab-btn" data-tab="monthly">本月运势</button>
+                <button class="tab-btn" data-tab="yearly">年度运势</button>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="daily">
+                    <div class="fortune-card">
+                        <div class="fortune-header">
+                            <h3>今日运势概览</h3>
+                            <p class="fortune-date"></p>
+                        </div>
+                        <div class="fortune-items">
+                            <div class="fortune-item">
+                                <h4>综合运势</h4>
+                                <div class="stars">★★★★☆</div>
+                                <p class="fortune-desc"></p>
+                            </div>
+                            <!-- 其他运势项目将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="personality-section">
+            <div class="personality-traits">
+                <h3>性格特点</h3>
+                <ul class="traits-list">
+                    <!-- 将通过JavaScript动态填充 -->
+                </ul>
+            </div>
+            <div class="strengths-weaknesses">
+                <div class="strengths">
+                    <h4>优点</h4>
+                    <ul>
+                        <!-- 将通过JavaScript动态填充 -->
+                    </ul>
+                </div>
+                <div class="weaknesses">
+                    <h4>缺点</h4>
+                    <ul>
+                        <!-- 将通过JavaScript动态填充 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="comments-section">
+            <h2>用户评论</h2>
+            <div class="comments-container">
+                <!-- 评论列表 -->
+            </div>
+            <div class="comment-form">
+                <!-- 评论表单 -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- 页脚内容 -->
+    </footer>
+
+    <script src="../../js/horoscope.js"></script>
+</body>
+</html> 
